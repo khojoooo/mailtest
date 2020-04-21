@@ -1,0 +1,17 @@
+.Post {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Post h1 {
+  font-size: 3rem;
+}
+
+.Post p {
+  font-size: 2rem;
+}
+
+.name {
+  width: 200px;
+}
