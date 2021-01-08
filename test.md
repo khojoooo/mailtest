@@ -1,104 +1,11 @@
-# "따라하며 배우는 파이썬과 데이터 과학" 정오표
-## *책 내용에 있는 오류를 정리한 페이지 입니다. 불편을 끼쳐드려 대단히 죄송합니다. 다음 인쇄 때 수정하여 반영하겠습니다.*
-## *책 증보판 발행시 소중한 기여자 분들의 id를 표기하여 감사의 마음을 표시하고자 합니다*
----
-
-# 오류
-## 잘못된 코드 오류, 실행 결과 오류, 잘못된 설명, 잘못된 참조 번호(그림, 코드 등) 
-
-## 페이지 : 49쪽
-### 오류내용 : 원기둥의 부피를 계산하는 식 오류
-<pre>
-volume_of_cylinder = pi * radius * height
-</pre>
-* 수정 후
-<pre>
-volume_of_cylinder = pi * (radius ** 2) * height
-</pre>
-
-## 페이지 : 62쪽
-### 오류내용 : 그림의 오른쪽 input()은 int()의 오타
-<pre>
-input()
-</pre>
-* 수정 후
-<pre>
-int()
-</pre>
-
-## 페이지 : 72쪽
-### 오류내용 : 표의 지수 결과값에서 72가 아닌 7의 2승입니다.
-<pre>
-72 = 49
-</pre>
-* 수정 후
-<pre>
-7^2 = 49
-</pre>
-
-## 페이지 : 209쪽
-### 오류내용 : 대칭차집합 메소드의 이름은 symmetric_difference() 입니다.
-<pre>
-대칭차집합은 ^ 연산자나 symmetry_difference() 메소드를 사용한다.
-</pre>
-* 수정 후
-<pre>
-대칭차집합은 ^ 연산자나 symmetric_difference() 메소드를 사용한다.
-</pre>
-
-<pre>
->>> A.symmetry_difference(B)
-</pre>
-* 수정 후
-<pre>
->>> A.symmetric_difference(B)
-</pre>
-
-## 페이지 : 279쪽
-### 오류내용 : 연습문제 10.5의 코드 오류, 32개의 값을 생성해야 하므로 arange()의 인자가 24가 아닌 32임
-<pre>
-a = np.arange(0, 24).range(4, 4, 2)
-</pre>
-* 수정 후
-<pre>
-a = np.arange(0, 32).range(4, 4, 2)
-</pre>
-
-## 페이지 : 288쪽
-### 오류내용 : x, y, z를 plotting하는 함수에서 세번째 함수의 인자가 잘못됨
-<pre>
-plt.plot(x, y, label='qubic')
-</pre>
-* 수정 후
-<pre>
-plt.plot(x, z, label='qubic')
-</pre>
-
-## 페이지 : 399쪽
-### 오류내용 : 심화문제 14.3의 표의 내용 오류, 닥스훈트의 높이 데이터가 잘못됨
-<center>연산자 | <center>기호 | <center>사용예 | <center>결과값
-:------------: | :----------: | :------------: | :-------------:
-덧셈 | + | 10 + 3 | 13
-뺄셈 | - | 9 - 2 | 7
-곱셈 | * | 11 * 3 | 33
-나눗셈(정수 나눗셈의 몫) | // | 45 // 5 | 9
-나눗셈(실수 나눗셈) | / | 45 / 5 | 9.0
-지수 | ** | 2 ** 10 | 1024
-나머지 | % | 17 % 3 | 2
-* 수정 후
-<pre>
-plt.plot(x, z, label='qubic')
-</pre>
-
-# 오탈자
-## 단순 오자와 탈자를 알려드립니다.
-
-## 페이지 : 290쪽
-### 오류내용 : 코드 내부의 레이블를 -> 레이블을의 오자
-<pre>
-# y축에 레이블를 붙인다.
-</pre>
-* 수정 후
-<pre>
-# y축에 레이블을 붙인다.
-</pre>
+|              | Header 1        | Header 2                       || Header 3                       ||
+|              | Subheader 1     | Subheader 2.1  | Subheader 2.2  | Subheader 3.1  | Subheader 3.2  |
+|==============|-----------------|----------------|----------------|----------------|----------------|
+| Row Header 1 | 3row, 3col span                                 ||| Colspan only                   ||
+| Row Header 2 |       ^                                         ||| Rowspan only   | Cell           |
+| Row Header 3 |       ^                                         |||       ^        | Cell           |
+| Row Header 4 |  Row            |  Each cell     |:   Centered   :| Right-aligned :|: Left-aligned  |
+:              :  with multiple  :  has room for  :   multi-line   :    multi-line  :  multi-line    :
+:              :  lines.         :  more text.    :      text.     :         text.  :  text.         :
+|--------------|-----------------|----------------|----------------|----------------|----------------|
+[Caption Text]
